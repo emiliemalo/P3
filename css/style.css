@@ -125,16 +125,25 @@ body {
 .barre-filtre {
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  font-weight: 700;
-  font-size: 17px;
+
+  width: 914px;
+  height: 50px;
+
+  font size: 18px;
+  text-align: center;
+  line height: 21,13px;
+  
+  
 }
 
-.fa-money-bill-wave {
-  border: 2px solid #d9d9d9;
-  border-radius: 0px, 25px, 25px, 0px;
-  border-width: 2px;
-  padding: 4px 20px;
+.contenu-filtre{
+  width: 175px;
+  height: 48px;
+  border: 2px;
+  border-radius: 2px;
+  padding: 4px,20px;
+  border-color: #D9D9D9;
+
 }
 .a {
   color: inherit;
