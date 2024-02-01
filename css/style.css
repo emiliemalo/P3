@@ -152,6 +152,13 @@ body {
   padding: 4px, 20px;
 }
 
+.fa-money-bill-wave,
+.fa-person,
+.fa-heart,
+.fa-fire {
+  color: #0065fc;
+}
+
 .a {
   color: inherit;
   text-decoration: none;
