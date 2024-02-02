@@ -50,6 +50,21 @@ body {
   text-align: center;
   margin-right: 40px;
 }
+.element1::before {
+  content: "";
+  position: absolute;
+  top: -35px; /* Position au-dessus du contenu */
+  left: -20px;
+  width: 162px;
+  height: 2px; /* Hauteur de la barre */
+  background-color: transparent; /* Couleur de la barre par défaut (invisible) */
+  transition: #0065fc; /* Transition pour l'animation */
+}
+
+.element1:hover::before {
+  background-color: #0065fc;
+  border: 2px solid;
+}
 
 .element2 {
   color: #000000;
@@ -97,7 +112,7 @@ body {
   background: var(--main-bg-color);
 }
 
-.input {
+input {
   width: 332px;
   height: 49px;
   top: 199px;
@@ -109,6 +124,9 @@ body {
   color: #000000;
   font-size: 18px;
   text-align: center;
+}
+.input::placeholder {
+  color: #000000;
 }
 
 /* css du bouton*/
@@ -132,30 +150,38 @@ body {
 }
 
 .barre-filtre {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   width: 1440px;
   height: 1884px;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .contenu-filtre {
-  display: flex;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 175px;
   height: 48px;
   border: 2px solid #d9d9d9;
+
   border-radius: 25px;
-  padding: 4px, 20px;
+  text-align: center;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 32px;
 }
 
 .fa-money-bill-wave,
 .fa-person,
 .fa-heart,
-.fa-fire {
+.fa-dog {
   color: #0065fc;
 }
 
