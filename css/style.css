@@ -63,7 +63,6 @@ body {
 
 .element1:hover::before {
   background-color: #0065fc;
-  border: 2px solid;
 }
 
 .element2 {
@@ -152,9 +151,11 @@ input {
 .barre-filtre {
   display: inline-flex;
   flex-direction: row;
-  width: 1440px;
-  height: 1884px;
-  text-align: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 100%;
+  max-width: 1440px;
   font-size: 18px;
   font-weight: 700;
   margin-top: 32px;
@@ -165,17 +166,21 @@ input {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 175px;
+  width: auto;
   height: 48px;
   border: 2px solid #d9d9d9;
 
   border-radius: 25px;
-  text-align: center;
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   margin-left: 32px;
+  padding: 4px 20px;
+  padding-right: 20px;
+}
+.contenu-filtre:hover {
+  background-color: #deebff;
 }
 
 .fa-money-bill-wave,
@@ -183,6 +188,10 @@ input {
 .fa-heart,
 .fa-dog {
   color: #0065fc;
+  margin-right: 10px;
+}
+.texte-icone {
+  display: inline-flex;
 }
 
 .a {
